@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "OpenCV",
+    name: "AHIOpenCV",
     platforms: [
         .macOS(.v10_13), .iOS(.v11), .macCatalyst(.v13)
     ],

@@ -3,7 +3,7 @@
 #
 
 Pod::Spec.new do |spec|
-    spec.name         = 'OpenCV'
+    spec.name         = 'AHIOpenCV'
     spec.version      = '4.6.0'
     spec.summary      = 'OpenCV, the open source computer vision and machine learning software library.'
   
@@ -58,8 +58,7 @@ Pod::Spec.new do |spec|
       :sha256 => "1ead050146646a8f81e37aba0f7efb7033678311734a272f76557647c4d419b2"
     }
     
-    spec.vendored_frameworks = 'AHIBodyScan.xcframework'
-    spec.resources = ['*.bundle']
+    spec.vendored_frameworks = 'opencv2.xcframework'
   
     spec.frameworks = [
       "Foundation",
