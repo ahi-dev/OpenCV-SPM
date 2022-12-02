@@ -74,7 +74,7 @@ Pod::Spec.new do |spec|
       "UIKit"
     ]
 
-    s.subspec 'Wrapper' do |subspec|
+    spec.subspec 'Wrapper' do |subspec|
       subspec.source_files = 'Sources/**/*.{h,m,swift}'
     end
   end
