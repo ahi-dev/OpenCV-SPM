@@ -50,7 +50,7 @@ Pod::Spec.new do |spec|
                                                             LICENSE
     }
     spec.author       = { 'Advanced Human Imaging' => 'dev@advancedhumanimaging.com' }
-    s.swift_version = '5.0'
+    spec.swift_version = '5.0'
   
     spec.ios.deployment_target = '13.4'
   
