@@ -50,6 +50,7 @@ Pod::Spec.new do |spec|
                                                             LICENSE
     }
     spec.author       = { 'Advanced Human Imaging' => 'dev@advancedhumanimaging.com' }
+    s.swift_version = '5.0'
   
     spec.ios.deployment_target = '13.4'
   
@@ -58,7 +59,7 @@ Pod::Spec.new do |spec|
       :sha256 => "1ead050146646a8f81e37aba0f7efb7033678311734a272f76557647c4d419b2"
     }
     
-    spec.vendored_frameworks = 'opencv2.xcframework'
+    spec.vendored_frameworks = 'build/opencv2.xcframework'
   
     spec.frameworks = [
       "Foundation",
@@ -72,5 +73,9 @@ Pod::Spec.new do |spec|
       "QuartzCore",
       "UIKit"
     ]
+
+    s.subspec 'Wrapper' do |subspec|
+      subspec.source_files = 'Sources/**/*.{h,m,swift}'
+    end
   end
   

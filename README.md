@@ -4,6 +4,13 @@ Use [OpenCV](https://github.com/opencv/opencv) in your Swift project in a more e
 
 This swift package helps you easily import the prebuilt `opencv2.xcframework` into your project, so you no longer need to build it by yourself. It watches the release events in [OpenCV Github Project](https://github.com/opencv/opencv) and automatically creates new releases, using the powerful [Github Actions](https://github.com/features/actions).
 
+## Publish
+
+Run the following to publish an update the CocoaPods podspec:
+```sh
+pod repo push ahi-dev --allow-warnings --verbose
+```
+
 ## Installation
 
 1. Add `https://github.com/Yeatse/OpenCV-SPM.git` to your package dependencies.
