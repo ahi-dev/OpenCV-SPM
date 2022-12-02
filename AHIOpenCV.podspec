@@ -77,7 +77,8 @@ Pod::Spec.new do |spec|
     spec.library = 'c++'
     spec.xcconfig = {
       'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
-      'CLANG_CXX_LIBRARY' => 'libc++'
+      'CLANG_CXX_LIBRARY' => 'libc++',
+      'OTHER_LDFLAGS' => '-all_load'
     }
   end
   
