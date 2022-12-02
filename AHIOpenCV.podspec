@@ -74,8 +74,10 @@ Pod::Spec.new do |spec|
       "UIKit"
     ]
 
-    spec.pod_target_xcconfig = {
-      'OTHER_LDFLAGS' => '-l"c++"'
+    spec.library = 'c++'
+    spec.xcconfig = {
+      'CLANG_CXX_LANGUAGE_STANDARD' => 'c++11',
+      'CLANG_CXX_LIBRARY' => 'libc++'
     }
   end
   
