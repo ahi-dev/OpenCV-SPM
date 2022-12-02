@@ -74,8 +74,8 @@ Pod::Spec.new do |spec|
       "UIKit"
     ]
 
-    spec.subspec 'Wrapper' do |subspec|
-      subspec.source_files = 'Sources/**/*.{h,m,swift}'
-    end
+    spec.pod_target_xcconfig = {
+      'OTHER_LDFLAGS' => '-l"c++"'
+    }
   end
   
