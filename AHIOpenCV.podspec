@@ -4,7 +4,7 @@
 
 Pod::Spec.new do |spec|
     spec.name         = 'AHIOpenCV'
-    spec.version      = '4.6.0'
+    spec.version      = '4.5.1'
     spec.summary      = 'OpenCV, the open source computer vision and machine learning software library.'
   
     spec.description  = <<-DESC
@@ -55,8 +55,8 @@ Pod::Spec.new do |spec|
     spec.ios.deployment_target = '13.4'
   
     spec.source       = { 
-      :http => "https://github.com/ahi-dev/OpenCV-SPM/releases/download/4.6.0/opencv2.xcframework.zip",
-      :sha256 => "1ead050146646a8f81e37aba0f7efb7033678311734a272f76557647c4d419b2"
+      :http => "https://github.com/ahi-dev/OpenCV-SPM/releases/download/4.5.1/opencv2.xcframework.zip",
+      :sha256 => "283d420f760584b903f71d765237473a2fe59d377d7a0b89bec3bd715c612a08"
     }
     
     spec.vendored_frameworks = 'build/opencv2.xcframework'
