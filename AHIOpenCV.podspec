@@ -59,7 +59,7 @@ Pod::Spec.new do |spec|
       :sha256 => "283d420f760584b903f71d765237473a2fe59d377d7a0b89bec3bd715c612a08"
     }
     
-    spec.vendored_frameworks = 'build/opencv2.xcframework'
+    spec.vendored_frameworks = 'opencv2.xcframework'
   
     spec.frameworks = [
       "Foundation",
